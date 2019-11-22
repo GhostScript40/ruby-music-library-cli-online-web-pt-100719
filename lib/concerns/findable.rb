@@ -12,8 +12,6 @@ odule Concerns::Findable
         end
     end
 
-end
-
 class Artist
     extend Concerns::Findable
 end
