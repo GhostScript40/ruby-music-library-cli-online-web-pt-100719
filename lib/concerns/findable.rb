@@ -1,4 +1,4 @@
-odule Concerns::Findable
+Module Concerns::Findable
 
     def find_by_name(name)
         all.detect {|x| x.name == name}
@@ -11,6 +11,8 @@ odule Concerns::Findable
             find_by_name(name)
         end
     end
+
+end
 
 class Artist
     extend Concerns::Findable
